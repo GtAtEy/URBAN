@@ -883,7 +883,7 @@ public class EstimationService {
 		ObjectMapper mapper = new ObjectMapper();
 		List<BillingSlab> matchingList1 = new ArrayList<>();
 		final String all = configs.getSlabValueAll();
-		Integer fromStartYear = Integer.parseInt(unit.getFromYear() .split("-")[0]);
+		Integer fromStartYear = Integer.parseInt(unit.getFromYear().split("-")[0]);
 		Integer toEndYear = Integer.parseInt(unit.getToYear().split("-")[0]) + 1;
 		BillingSlab billSlbs = null;
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
